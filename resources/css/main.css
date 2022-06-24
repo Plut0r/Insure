@@ -1,0 +1,360 @@
+/* color variables */
+:root {
+  --dark-violet: hsl(256, 26%, 20%);
+  --grayish-blue: hsl(216, 30%, 68%);
+  --very-dark-violet: hsl(270, 9%, 17%);
+  --dark-grayish-violet: hsl(273, 4%, 51%);
+  --very-light-gray: hsl(0, 0%, 98%); 
+}
+/* base properties */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+   /* font-family: 'DM Serif Display', serif; */
+    font-family: 'Karla', sans-serif;
+    background-color: var(--very-light-gray);
+}
+header {
+  background-color: var(--very-light-gray);
+}
+.nav-link {
+  font-weight: 700;
+}
+.intro-head {
+  color: var(--very-light-gray);
+  line-height: 1;
+  margin-top: 30px;
+}
+.intro-text {
+  color: var(--very-light-gray);
+}
+.intro-link {
+  text-transform: uppercase;
+  color: var(--very-light-gray);
+  border: 2px solid var(--very-light-gray);
+  text-decoration: none;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.intro-link:hover {
+  background-color: var(--very-light-gray);
+  color: var(--dark-violet);
+}
+.container-3 {
+  font-family: 'DM Serif Display', serif;
+}
+.diff-text {
+  color: var(--dark-violet);
+}
+.icon-img {
+  width: 50px;
+}
+.icon-head {
+  color: var(--very-dark-violet);
+}
+.icon-text {
+  color: var(--dark-grayish-violet);
+  font-family: 'Karla', sans-serif;
+}
+.work-text {
+  font-family: 'DM Serif Display', serif;
+    color: var(--very-light-gray);
+}
+.work-link {
+  text-transform: uppercase;
+    color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray);
+    text-decoration: none;
+}
+.work-link:hover {
+  background-color: var(--very-light-gray);
+  color: var(--dark-violet);
+}
+.social-link:hover {
+  background-color: var(--very-dark-violet);
+}
+.grp-head {
+  color: var(--dark-grayish-violet);
+    text-transform: uppercase;
+    font-family: 'DM Serif Display', serif;
+}
+.grp-link {
+  color: var(--very-dark-violet);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.grp-link:hover {
+  text-decoration: underline;
+  color: var(--very-dark-violet);
+}
+.grp-item {
+  display: flex;
+    flex-direction: column;
+}
+
+/* for larger screens */
+@media screen and (min-width: 900px) {
+  .mobile-img {
+    display: none;
+  }
+  .section-1 {
+    background-image: url("../images/bg-pattern-intro-right-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+    position: absolute;
+    margin-top: 50px;
+    background-color: var(--dark-violet);
+    height: 450px;
+  }
+  .container-1 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    font-family: 'DM Serif Display', serif;
+    margin-left: 100px;
+  }
+  .intro-head {
+    font-size: 3rem;
+  }
+  .container-2 {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-right: 300px;
+  }
+  .intro-desk-image {
+    width: 400px;
+    margin-top: 100px;
+  }
+  .container-2-b {
+    margin-top: -220px;
+    position: relative;
+  }
+  .intro-left {
+    height: 300px;
+  }
+  .container-3 {
+    margin-left: 100px;
+  }
+  .container-3-a, .container-3-b, .container-3-c {
+    width: 30%;
+    margin-right: 25px;
+  }
+  .flex-container {
+    display: flex;
+    margin-top: 40px;
+  }
+  .icon-head {
+    font-size: 1.3rem;
+    margin-top: 20px;
+  }
+  .container-4 {
+    background-color: var(--dark-violet);
+    margin-top: 80px;
+    width: 85%;
+    margin-left: 100px;
+    height: 150px;
+    background-image: url("../images/bg-pattern-how-we-work-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+    display: flex;
+    justify-content: space-between;
+  }
+  .work-text {
+    width: 30%;
+    padding-top: 30px;
+    padding-left: 60px;
+  }
+  .work-link {
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  footer {
+    background-image: url("../images/bg-pattern-footer-desktop.svg");
+    background-repeat: no-repeat;
+    margin-top: 130px;
+    padding-bottom: 20px;
+  }
+  .insure-logo {
+    width: 70px;
+    margin-left: 100px;
+  }
+  .social-div {
+    margin-right: 80px;
+  }
+  .social-img {
+    padding-right: 10px;
+  }
+  .grp-1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .part-2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -130px;
+    margin-top: 50px;
+  }
+  .grp-head {
+    font-size: 1rem;
+  }
+  .grp-item {
+    margin-left: -30px;
+  }
+  .grp-nav {
+    margin-top: 20px;
+  }
+}
+
+/* for smaller screens */
+@media screen and (max-width: 900px) {
+  .desk-img {
+    display: none;
+  }
+  .section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .section-1 {
+    background-color: var(--dark-violet);
+    background-image: url("../images/bg-pattern-intro-left-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-1 {
+    width: 75%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container-2 {
+    display: flex;
+    width: 100%;
+  }
+  .intro-link {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hr {
+    display: none;
+  }
+  .mobile-section {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .intro-right {
+    margin-top: -130px;
+    height: 350px;
+  }
+  .container-3 {
+    margin-top: -120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-3-a, .container-3-b, .container-3-c {
+    width: 70%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .diff-text {
+    font-size: 2.2rem;
+  }
+  .icon-head {
+    margin-top: 15px;
+  }
+  .container-4 {
+    background-color: var(--dark-violet);
+    background-image: url("../images/bg-pattern-how-we-work-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    height: 300px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .work-text {
+    width: 70%;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .work-link {
+    margin-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  footer {
+    background-image: url("../images/bg-pattern-footer-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-top: 100px;
+  }
+  .grp-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .insure-logo {
+    width: 70px;
+    margin-bottom: 20px;
+  }
+  .line {
+    width: 100%;
+  }
+  .social-img {
+    padding-right: 10px;
+  }
+  .social-div {
+    margin-bottom: 10px;
+  }
+  .grp-head {
+    font-size: 0.9rem;
+  }
+  .grp-nav {
+    margin-top: 10px;
+    margin-left: -31px;
+  }
+  .grp-2, .grp-3, .grp-4, .grp-5 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  
+
+}
