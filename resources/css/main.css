@@ -240,6 +240,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
   .container-1 {
     width: 75%;
