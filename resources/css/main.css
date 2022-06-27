@@ -99,7 +99,7 @@ header {
 }
 
 /* for larger screens */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
   .mobile-img {
     display: none;
   }
@@ -222,7 +222,7 @@ header {
 }
 
 /* for smaller screens */
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 900px) {
   .desk-img {
     display: none;
   }
